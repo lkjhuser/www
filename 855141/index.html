@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>VR360</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <a-asset-item id="123" src="855141.obj"></a-asset-item>
+        <a-asset-item id="456" src="855141.mtl"></a-asset-item>
+		<img id="678" src="123.jpg">
+    </a-assets>
+	<a-sky src="#678"></a-sky>
+    <a-entity obj-model="obj:#123; mtl:#456;" position="0 0 -4" scale="1 1 1"> </a-entity>
+    </a-scene>
+  </body>
+</html>
