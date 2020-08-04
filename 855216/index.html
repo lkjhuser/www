@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>VR360</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+	  <img id="playground" src="playground.jpg">
+        <a-asset-item id="randy-obj" src="855216Randy.obj "></a-asset-item>
+        <a-asset-item id="randy yang-mtl" src="855216Randy.mtl"></a-asset-item>
+
+    </a-assets>
+	<a-sky src="#playground"></a-sky>
+    <a-entity obj-model="obj:#randy-obj; mtl:#randy yang-mtl;" position="0 0.5 -4" scale="0.1 0.1 0.1"> </a-entity>
+    </a-scene>
+  </body>
+</html>
